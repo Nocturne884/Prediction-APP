@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-//import 'login_screen.dart';
-import 'dashboard_screen.dart';
+import 'login_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -33,7 +33,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF287C70)),
       ),
       //home: const LoginScreen(),
-      home: const DashboardScreen(),
+      home: const LoginScreen(),
+
+ 
     );
   }
 }

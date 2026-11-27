@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'dashboard_screen.dart';
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -138,6 +138,17 @@ class _LoginScreenState extends State<LoginScreen> {
                               child: const Text('Sign in'),
                             ),
                           ),
+                     const SizedBox(height: 12),
+                        OutlinedButton(
+                          onPressed: () {
+                            Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(
+                                builder: (context) => const DashboardScreen(),
+                              ),
+                            );
+                          },
+                          child: const Text('Continue as guest'),
+                        ),
                           const SizedBox(height: 24),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
